@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Canvas',
+    'name' => 'Chloe',
 
     /*
     |--------------------------------------------------------------------------
@@ -51,7 +51,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => 'http://chloe.ogatism.com/',
 
     /*
     |--------------------------------------------------------------------------
@@ -64,7 +64,7 @@ return [
     |
     */
 
-    'timezone' => env('APP_TIMEZONE', 'America/Chicago'),
+    'timezone' => env('APP_TIMEZONE', 'Asia/Tokyo'),
 
     /*
     |--------------------------------------------------------------------------
@@ -167,7 +167,7 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         App\Providers\EventServiceProvider::class,
-        Canvas\CanvasServiceProvider::class,
+        Easel\CanvasServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
     ],
 
@@ -223,7 +223,7 @@ return [
         'JsValidator'   => Proengsoft\JsValidation\Facades\JsValidatorFacade::class,
         'ConfigWriter'  => Larapack\ConfigWriter\Repository::class,
         'Excel'         => Maatwebsite\Excel\Facades\Excel::class,
-        'Settings'      => Canvas\Models\Settings::class,
+        'Settings'      => Easel\Models\Settings::class,
 
     ],
 

@@ -46,15 +46,19 @@ class Handler extends ExceptionHandler
     {
         switch ($e) {
             case $e instanceof \Symfony\Component\HttpKernel\Exception\NotFoundHttpException:
-                return response(view('canvas::errors.404'), 404);
+                return response(view('easel::errors.404'), 404);
                 break;
 
             case $e instanceof \Symfony\Component\HttpKernel\Exception\MethodNotAllowedHttpException:
-                return response(view('canvas::errors.404'), 404);
+                return response(view('easel::errors.404'), 404);
+                break;
+
+            case $e instanceof \Symfony\Component\Debug\Exception\FatalThrowableError:
+                return response(view('easel::errors.500'), 500);
                 break;
 
             case $e instanceof \Symfony\Component\HttpKernel\Exception\HttpException:
-                return response(view('canvas::errors.503'), 503);
+                return response(view('easel::errors.503'), 503);
                 break;
 
             default:
