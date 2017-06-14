@@ -1,9 +1,9 @@
 <?php
 
-namespace Canvas\Extensions;
+namespace Easel\Extensions;
 
-use Canvas\Meta\Constants;
-use Canvas\Models\Settings;
+use Easel\Meta\Constants;
+use Easel\Models\Settings;
 use Illuminate\Support\Collection;
 
 class ThemeManager extends ExtensionManager

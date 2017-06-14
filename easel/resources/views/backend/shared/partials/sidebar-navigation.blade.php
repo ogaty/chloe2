@@ -19,23 +19,23 @@
         <li class="sub-menu @if (Route::is('canvas.admin.post.index') || Route::is('canvas.admin.post.create') || Route::is('canvas.admin.post.edit'))active toggled @endif">
             <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-collection-bookmark"></i> Posts</a>
             <ul>
-                <li><a href="{!! route('canvas.admin.post.index') !!}" @if (Route::is('canvas.admin.post.index') || Route::is('canvas.admin.post.edit')) class="active" @endif>All Posts <span class="label label-default label-totals">{!! Canvas\Models\Post::count() !!}</span></a></li>
+                <li><a href="{!! route('canvas.admin.post.index') !!}" @if (Route::is('canvas.admin.post.index') || Route::is('canvas.admin.post.edit')) class="active" @endif>All Posts <span class="label label-default label-totals">{!! Easel\Models\Post::count() !!}</span></a></li>
                 <li><a href="{!! route('canvas.admin.post.create') !!}" @if (Route::is('canvas.admin.post.create')) class="active" @endif>Add New</a></li>
             </ul>
         </li>
         <li class="sub-menu @if (Route::is('canvas.admin.tag.index') || Route::is('canvas.admin.tag.create') || Route::is('canvas.admin.tag.edit'))active toggled @endif">
             <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-labels"></i> Tags</a>
             <ul>
-                <li><a href="{!! route('canvas.admin.tag.index') !!}" @if (Route::is('canvas.admin.tag.index') || Route::is('canvas.admin.tag.edit')) class="active" @endif>All Tags <span class="label label-default label-totals">{!! Canvas\Models\Tag::count() !!}</span></a></li>
+                <li><a href="{!! route('canvas.admin.tag.index') !!}" @if (Route::is('canvas.admin.tag.index') || Route::is('canvas.admin.tag.edit')) class="active" @endif>All Tags <span class="label label-default label-totals">{!! Easel\Models\Tag::count() !!}</span></a></li>
                 <li><a href="{!! route('canvas.admin.tag.create') !!}" @if (Route::is('canvas.admin.tag.create')) class="active" @endif>Add New</a></li>
             </ul>
         </li>
         <li @if (Request::is('admin/upload')) class="active" @endif><a href="{!! route('canvas.admin.upload') !!}"><i class="zmdi zmdi-collection-folder-image"></i> Media</a></li>
-        @if(\Canvas\Models\User::isAdmin(Auth::guard('canvas')->user()->role))
+        @if(\Easel\Models\User::isAdmin(Auth::guard('canvas')->user()->role))
             <li class="sub-menu @if (Route::is('canvas.admin.user.index') || Route::is('canvas.admin.user.create') || Route::is('canvas.admin.user.edit'))active toggled @endif">
                 <a href="" data-ma-action="submenu-toggle"><i class="zmdi zmdi-accounts-alt"></i> Users</a>
                 <ul>
-                    <li><a href="{!! route('canvas.admin.user.index') !!}" @if (Route::is('canvas.admin.user.index') || Route::is('canvas.admin.user.edit')) class="active" @endif>All Users <span class="label label-default label-totals">{!! Canvas\Models\User::count() !!}</span></a></li>
+                    <li><a href="{!! route('canvas.admin.user.index') !!}" @if (Route::is('canvas.admin.user.index') || Route::is('canvas.admin.user.edit')) class="active" @endif>All Users <span class="label label-default label-totals">{!! Easel\Models\User::count() !!}</span></a></li>
                     <li><a href="{!! route('canvas.admin.user.create') !!}" @if (Route::is('canvas.admin.user.create')) class="active" @endif>Add New</a></li>
                 </ul>
             </li>

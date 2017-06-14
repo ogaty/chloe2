@@ -1,7 +1,7 @@
 @extends('canvas::backend.layout')
 
 @section('title')
-    <title>{{ \Canvas\Models\Settings::blogTitle() }} | Sign In</title>
+    <title>{{ \Easel\Models\Settings::blogTitle() }} | Sign In</title>
 @stop
 
 @section('login')
@@ -12,6 +12,6 @@
 @endsection
 
 @section('unique-js')
-    {!! JsValidator::formRequest('Canvas\Http\Requests\LoginRequest', '#login') !!}
+    {!! JsValidator::formRequest('Easel\Http\Requests\LoginRequest', '#login') !!}
     @include('canvas::backend.shared.components.show-password', ['inputs' => 'input[name="password"]'])
 @stop

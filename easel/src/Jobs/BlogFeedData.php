@@ -1,11 +1,11 @@
 <?php
 
-namespace Canvas\Jobs;
+namespace Easel\Jobs;
 
 use Carbon\Carbon;
-use Canvas\Models\Tag;
-use Canvas\Models\Post;
-use Canvas\Models\Settings;
+use Easel\Models\Tag;
+use Easel\Models\Post;
+use Easel\Models\Settings;
 use Illuminate\Queue\SerializesModels;
 
 /**

@@ -63,7 +63,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => \Canvas\Models\User::class,
+            'model' => Easel\Models\User::class,
         ],
         // 'users' => [
         //     'driver' => 'database',

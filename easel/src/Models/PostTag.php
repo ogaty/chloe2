@@ -1,6 +1,6 @@
 <?php
 
-namespace Canvas\Models;
+namespace Easel\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -8,7 +8,7 @@
 | Create the user model in the database for testing purposes.
 |
 */
-$factory->define(Canvas\Models\User::class, function (Faker\Generator $faker) {
+$factory->define(Easel\Models\User::class, function (Faker\Generator $faker) {
     return [
         'first_name' => $first = $faker->firstName,
         'last_name' => $last = $faker->lastName,
@@ -42,7 +42,7 @@ $factory->define(Canvas\Models\User::class, function (Faker\Generator $faker) {
 | Create the initial Post.
 |
 */
-$factory->define(Canvas\Models\Post::class, function () {
+$factory->define(Easel\Models\Post::class, function () {
     return [
         'title' => 'Hello World',
         'slug' => 'hello-world',
@@ -64,7 +64,7 @@ $factory->define(Canvas\Models\Post::class, function () {
 | Create the initial Tag.
 |
 */
-$factory->define(Canvas\Models\Tag::class, function () {
+$factory->define(Easel\Models\Tag::class, function () {
     return [
         'tag' => 'Getting Started',
         'title' => 'Getting Started',

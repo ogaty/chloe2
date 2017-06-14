@@ -56,7 +56,7 @@
         <div class="fg-line">
             <label class="fg-label">Social Header Icons</label>
             <select name="social_header_icons_user_id" id="social_header_icons_user_id" class="selectpicker">
-                @foreach (\Canvas\Models\User::all() as $user)
+                @foreach (\Easel\Models\User::all() as $user)
                     <option @if ($user->id == $data['socialHeaderIconsUserId']) selected @endif value="{!! $user->id !!}">{!! $user->display_name !!}</option>
                 @endforeach
             </select>
@@ -128,6 +128,24 @@
         <div class="fg-line">
             <label class="fg-label"><i class="zmdi zmdi-language-javascript"></i> Custom JS</label>
             <textarea class="form-control" rows="10" name="custom_js" id="custom_js" style="resize: vertical" placeholder="Define your own JS scripts for the blog here.">{{ $data['custom_js'] }}</textarea>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="form-group">
+        <div class="fg-line">
+            <label class="fg-label"><i class="zmdi zmdi-language-javascript"></i> ad1</label>
+            <textarea class="form-control" rows="10" name="ad1" id="ad1" style="resize: vertical" placeholder="ad1">{{ $data['ad1'] }}</textarea>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="form-group">
+        <div class="fg-line">
+            <label class="fg-label"><i class="zmdi zmdi-language-javascript"></i> ad2</label>
+            <textarea class="form-control" rows="10" name="ad2" id="ad2" style="resize: vertical" placeholder="ad2">{{ $data['ad2'] }}</textarea>
         </div>
     </div>
 

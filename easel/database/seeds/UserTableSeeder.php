@@ -1,8 +1,8 @@
 <?php
 
-namespace Canvas;
+namespace Easel;
 
-use Canvas\Models\User;
+use Easel\Models\User;
 use Illuminate\Database\Seeder;
 
 class UserTableSeeder extends Seeder

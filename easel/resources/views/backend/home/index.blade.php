@@ -1,7 +1,7 @@
 @extends('canvas::backend.layout')
 
 @section('title')
-    <title>{{ \Canvas\Models\Settings::blogTitle() }} | Home</title>
+    <title>{{ \Easel\Models\Settings::blogTitle() }} | Home</title>
 @stop
 
 @section('content')
@@ -9,11 +9,11 @@
         @include('canvas::backend.shared.partials.sidebar-navigation')
         <section id="content">
             <div class="container">
-                @if(\Canvas\Models\User::isAdmin(Auth::guard('canvas')->user()->role))
+                @if(\Easel\Models\User::isAdmin(Auth::guard('canvas')->user()->role))
                     @include('canvas::backend.home.sections.welcome')
                 @endif
                 <div class="row">
-                    @if(\Canvas\Models\User::isAdmin(Auth::guard('canvas')->user()->role))
+                    @if(\Easel\Models\User::isAdmin(Auth::guard('canvas')->user()->role))
                         <div class="col-sm-6 col-md-6">
                             @include('canvas::backend.home.sections.at-a-glance')
                         </div>
@@ -40,5 +40,5 @@
         {{ \Session::forget('_login') }}
     @endif
     @include('canvas::backend.shared.components.slugify')
-    {!! JsValidator::formRequest('Canvas\Http\Requests\PostCreateRequest', '#postCreate') !!}
+    {!! JsValidator::formRequest('Easel\Http\Requests\PostCreateRequest', '#postCreate') !!}
 @stop

@@ -1,7 +1,7 @@
 @extends('canvas::backend.layout')
 
 @section('title')
-    <title>{{ \Canvas\Models\Settings::blogTitle() }} | Edit User</title>
+    <title>{{ \Easel\Models\Settings::blogTitle() }} | Edit User</title>
 @stop
 
 @section('content')
