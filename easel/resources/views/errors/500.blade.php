@@ -1,7 +1,7 @@
 @extends('canvas::errors.layout')
 
 @section('title')
-    <title>{{ \Canvas\Models\Settings::blogTitle() }} | Page not found</title>
+    <title>{{ \Easel\Models\Settings::blogTitle() }} | Page not found</title>
 @stop
 
 @section('content')

@@ -4,7 +4,7 @@
             <a href="{{ $post->url($tag) }}">{{ $post->title }}</a>
         </h2>
         <p class="post-meta">
-            {{ $post->published_at->diffForHumans() }} &#183; {{ $post->readingTime() }} MIN READ
+            {{ $post->published_at->diffForHumans() }}
             <br>
             @unless( $post->tags->isEmpty())
                 {!! implode(' ', $post->tagLinks()) !!}

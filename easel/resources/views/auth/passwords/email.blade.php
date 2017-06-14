@@ -1,7 +1,7 @@
 @extends('canvas::backend.layout')
 
 @section('title')
-    <title>{{ \Canvas\Models\Settings::blogTitle() }} | Forgot Password</title>
+    <title>{{ \Easel\Models\Settings::blogTitle() }} | Forgot Password</title>
 @stop
 
 @section('login')
@@ -12,6 +12,6 @@
 @endsection
 
 @section('unique-js')
-    {!! JsValidator::formRequest('Canvas\Http\Requests\ForgotPasswordRequest', '#forgot-password') !!}
+    {!! JsValidator::formRequest('Easel\Http\Requests\ForgotPasswordRequest', '#forgot-password') !!}
     @include('canvas::backend.shared.components.show-password', ['inputs' => 'input[name="password"]'])
 @stop

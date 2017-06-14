@@ -10,6 +10,7 @@ use Easel\Models\Settings;
 use Illuminate\Http\Request;
 use Easel\Jobs\BlogIndexData;
 use Easel\Jobs\BlogFeedData;
+use Easel\Jobs\BlogXmlData;
 use Easel\Http\Controllers\Controller;
 
 class BlogController extends Controller
@@ -57,6 +58,9 @@ class BlogController extends Controller
             return redirect()->route('canvas.blog.post.index');
         }
 
+        $ad1 = $contents = Settings::ad1();
+        $ad2 = $contents = Settings::ad2();
+        $post->content_html = str_replace('<span id="ad1"></span>', $ad1, $post->content_html);
         return view($post->layout, compact('post', 'tag', 'slug', 'title', 'user', 'css', 'js', 'socialHeaderIconsUser'));
     }
 
@@ -70,6 +74,8 @@ class BlogController extends Controller
 
     public function sitemap(Request $request)
     {
-
+        $tag = null;
+        $data = $this->dispatch(new BlogXmlData($tag));
+        return response()->view('canvas::frontend.blog.sitemap', compact('data'))->header('Content-Type', 'application/xml');
     }
 }

@@ -48,6 +48,8 @@ class SettingsController extends Controller
             'active_theme_theme' => $this->themeManager->getTheme($this->themeManager->getActiveTheme()) ?: $this->themeManager->getDefaultTheme(),
             'custom_css' => Settings::customCSS(),
             'custom_js' => Settings::customJS(),
+            'ad1' => Settings::ad1(),
+            'ad2' => Settings::ad2(),
             'url' => $_SERVER['HTTP_HOST'],
             'ip' => $_SERVER['REMOTE_ADDR'],
             'timezone' => env('APP_TIMEZONE'),
@@ -96,6 +98,8 @@ class SettingsController extends Controller
         Settings::updateOrCreate(['setting_name' => 'custom_css'], ['setting_value' => $request->toArray()['custom_css']]);
         Settings::updateOrCreate(['setting_name' => 'custom_js'], ['setting_value' => $request->toArray()['custom_js']]);
         Settings::updateOrCreate(['setting_name' => 'social_header_icons_user_id'], ['setting_value' => $request->toArray()['social_header_icons_user_id']]);
+        Settings::updateOrCreate(['setting_name' => 'ad1'], ['setting_value' => $request->toArray()['ad1']]);
+        Settings::updateOrCreate(['setting_name' => 'ad2'], ['setting_value' => $request->toArray()['ad2']]);
 
         Session::set('_update-settings', trans('canvas::messages.save_settings_success'));
 

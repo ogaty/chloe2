@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+Sitemap: http://chloe.ogatism.com/sitemap.xml
+

@@ -1,8 +1,8 @@
 <?php
 
-namespace Canvas\Extensions;
+namespace Easel\Extensions;
 
-use Canvas\Contracts\Annex;
+use Easel\Contracts\Annex;
 use Illuminate\Contracts\Support\Arrayable;
 
 /**
