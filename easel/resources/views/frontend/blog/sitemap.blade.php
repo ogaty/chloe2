@@ -6,14 +6,14 @@
     </url>
     @foreach ($data['posts'] as $key => $value)
     <url>
-        <loc>{{ $data['url'] }}/blog/posts/{{ $value['slug'] }}</loc>
-        <lastmod>{{ date('Y-m-d', strtotime($value['updated_at'])) }}</lastmod>
+        <loc>{{ $data['url'] }}/blog/post/{{ $value['slug'] }}</loc>
+        <lastmod>{{ \Carbon\Carbon::parse($value['updated_at'])->toAtomString() }}</lastmod>
     </url>
     @endforeach
     @foreach ($data['tags'] as $key => $value)
     <url>
-        <loc>{{ $data['url'] }}/blog/posts/{{ $value['tag'] }}</loc>
-        <lastmod>{{ date('Y-m-d', strtotime($value['updated_at'])) }}</lastmod>
+        <loc>{{ $data['url'] }}/blog/?tag={{ $value['tag'] }}</loc>
+        <lastmod>{{ \Carbon\Carbon::parse($value['updated_at'])->toAtomString() }}</lastmod>
     </url>
     @endforeach
 </urlset>
