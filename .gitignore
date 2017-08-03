@@ -2,6 +2,7 @@
 /node_modules
 /public/storage
 /public/vendor
+/storage/*.lock
 /storage/*.index
 /tests/report
 
