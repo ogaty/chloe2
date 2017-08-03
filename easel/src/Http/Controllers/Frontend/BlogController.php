@@ -12,6 +12,7 @@ use Easel\Jobs\BlogIndexData;
 use Easel\Jobs\BlogFeedData;
 use Easel\Jobs\BlogXmlData;
 use Easel\Http\Controllers\Controller;
+use Carbon\Carbon;
 
 class BlogController extends Controller
 {
