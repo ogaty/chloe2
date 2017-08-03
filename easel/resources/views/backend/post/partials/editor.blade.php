@@ -15,6 +15,7 @@
             mounted: function () {
                 this.simpleMde = new SimpleMDE({
                     element: document.getElementById("editor"),
+                    spellChecker: false,
                     toolbar: [
                         "bold", "italic", "heading", "|",
                         "quote", "unordered-list", "ordered-list", "|",
