@@ -42,7 +42,7 @@ class SetupHelper extends CanvasHelper
      */
     public static function isInstalled()
     {
-        return File::exists(storage_path(CanvasHelper::INSTALLED_FILE));
+        return true;
     }
 
     public static function installedBanner()
