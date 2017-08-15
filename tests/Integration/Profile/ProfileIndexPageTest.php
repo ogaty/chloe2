@@ -45,7 +45,7 @@ class ProfileIndexPageTest extends TestCase
     public function it_shows_error_messages_for_required_fields()
     {
         Auth::guard('canvas')->login($this->user);
-        $this->actingAs(factory(Canvas\Models\User::class)->create())
+        $this->actingAs(factory(Easel\Models\User::class)->create())
             ->visit(route('canvas.admin.profile.index'));
 
         // Fill in all of the required fields with an empty string

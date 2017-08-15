@@ -11,6 +11,10 @@ class TestDatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call('Canvas\TestDatabaseSeeder');
+        $this->call(PostTableSeeder::class);
+        $this->call(TagTableSeeder::class);
+        $this->call(PostTagTableSeeder::class);
+        $this->call(UserTableSeeder::class);
+        $this->call(SettingsTableSeeder::class);
     }
 }
