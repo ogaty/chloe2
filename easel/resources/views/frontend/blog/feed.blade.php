@@ -12,7 +12,7 @@
         <dc:language>ja</dc:language>
         <atom:link rel="self" href="{{ $data['url'] }}/feed" type="application/rss+xml"/>  
         <dc:creator>ogaty</dc:creator>
-        <dc:date>{{ \Carbon\Carbon::parse($value['created_at'])->toAtomString() }}</dc:date>
+        <dc:date>{{ \Carbon\Carbon::parse($data['posts'][0]['created_at'])->toAtomString() }}</dc:date>
 
         @foreach ($data['posts'] as $key => $value)
             <item>
