@@ -1,8 +1,8 @@
 <?php
 
-use Canvas\Models\Tag;
-use Canvas\Models\Post;
-use Canvas\Models\User;
+use Easel\Models\Tag;
+use Easel\Models\Post;
+use Easel\Models\User;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 trait InteractsWithDatabase
@@ -25,7 +25,7 @@ trait InteractsWithDatabase
 
         $this->runDatabaseMigrations();
 
-        $this->seed(\Canvas\TestDatabaseSeeder::class);
+        $this->seed(TestDatabaseSeeder::class);
     }
 
     /**

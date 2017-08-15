@@ -1,6 +1,6 @@
 <?php
 
-use Canvas\Models\User;
+use Easel\Models\User;
 
 trait CreatesUser
 {
