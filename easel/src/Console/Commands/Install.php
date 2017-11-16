@@ -4,7 +4,7 @@ namespace Easel\Console\Commands;
 
 use Exception;
 use Easel\Models\User;
-use Easel\Meta\Constants;
+use App\Meta\Constants;
 use Easel\Helpers\SetupHelper;
 use Easel\Helpers\ConfigHelper;
 use Easel\Extensions\ThemeManager;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Easel\Meta;
+namespace App\Meta;
 
 /**
  * A home for global Canvas constants.
@@ -55,7 +55,7 @@ class Constants
     /**
      * @constant(ROUTE_MIDDLEWARE_GENERAL)
      */
-    const ROUTE_MIDDLEWARE_GENERAL = ['checkForMaintenanceMode'];
+    const ROUTE_MIDDLEWARE_GENERAL = [];
 
     /**
      * @constant(ROUTE_MIDDLEWARE_INSTALLED)
@@ -65,7 +65,7 @@ class Constants
     /**
      * @constant(ROUTE_MIDDLEWARE_ADMIN)
      */
-    const ROUTE_MIDDLEWARE_ADMIN = ['checkForMaintenanceMode', 'canvasInstalled', 'auth:canvas'];
+    const ROUTE_MIDDLEWARE_ADMIN = ['auth:canvas'];
 
     /**
      * @constant(ROUTE_MIDDLEWARE_GROUPS_GENERAL)

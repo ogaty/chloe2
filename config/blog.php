@@ -101,7 +101,7 @@ return [
     | Middleware to apply to every route.
     |
     */
-    'route_middleware_general' => ['checkForMaintenanceMode'],
+    //'route_middleware_general' => ['CheckForMaintenanceMode'],
 
     /*
     |--------------------------------------------------------------------------
@@ -121,5 +121,5 @@ return [
     | Middleware to apply to admin routes.
     |
     */
-    'route_middleware_admin' => ['checkForMaintenanceMode', 'canvasInstalled', 'auth:canvas'],
+    //'route_middleware_admin' => ['CheckForMaintenanceMode', 'canvasInstalled', 'auth:canvas'],
 ];

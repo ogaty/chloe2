@@ -2,6 +2,8 @@ const elixir = require('laravel-elixir');
 
 require('laravel-elixir-vue-2');
 
+var assetsPath = 'public/assets/';
+
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
@@ -14,5 +16,9 @@ require('laravel-elixir-vue-2');
  */
 
 elixir(function (mix) {
-    // Your gulp tasks!
+    // Sass files
+    mix.sass('frontend/frontend.scss', assetsPath + 'css/');
+    mix.sass('backend/backend.scss', assetsPath + 'css/');
+    mix.sass('../talvbansal/media-manager/css/media-manager.css', assetsPath + 'css/');
+
 });

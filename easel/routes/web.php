@@ -13,9 +13,6 @@ Route::group([
     Route::get('canvas.install', 'Easel\Http\Controllers\Setup\InstallController@index')->name('canvas.install');
 
     /* Fully-installed and configured routes. */
-    Route::group([
-        'middleware' => RouteHelper::getInstalledMiddleware(),
-    ], function () {
         Route::get('/', 'Easel\Http\Controllers\Frontend\BlogController@index')->name('canvas.home');
         Route::get('/feed', 'Easel\Http\Controllers\Frontend\BlogController@feed')->name('canvas.feed');
         Route::get('/sitemap.xml', 'Easel\Http\Controllers\Frontend\BlogController@sitemap')->name('canvas.sitemap');
@@ -46,7 +43,6 @@ Route::group([
                 Route::post('reset', 'ResetPasswordController@reset')->name('canvas.auth.password.reset.store');
             });
         });
-    });
 });
 
 /* Backend page routes. */
