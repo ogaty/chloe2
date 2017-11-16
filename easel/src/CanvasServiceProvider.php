@@ -201,7 +201,6 @@ class CanvasServiceProvider extends ServiceProvider
 
         // Register middleware...
         $router->middleware('checkIfAdmin', CheckIfAdmin::class);
-//        $router->middleware('canvasInstalled', EnsureInstalled::class);
         $router->middleware('canvasNotInstalled', EnsureNotInstalled::class);
 //        $router->middleware('CheckForMaintenanceMode', CheckForMaintenanceMode::class);
     }

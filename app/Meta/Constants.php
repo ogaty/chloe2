@@ -60,7 +60,7 @@ class Constants
     /**
      * @constant(ROUTE_MIDDLEWARE_INSTALLED)
      */
-    const ROUTE_MIDDLEWARE_INSTALLED = ['canvasInstalled'];
+    const ROUTE_MIDDLEWARE_INSTALLED = [];
 
     /**
      * @constant(ROUTE_MIDDLEWARE_ADMIN)
