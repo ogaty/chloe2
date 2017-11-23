@@ -4,7 +4,7 @@ namespace Easel\Helpers;
 
 use ErrorException;
 use Easel\Models\User;
-use Easel\Meta\Constants;
+use App\Meta\Constants;
 use Easel\Models\Settings;
 use Illuminate\Http\Request;
 use Easel\Extensions\ExtensionManager;

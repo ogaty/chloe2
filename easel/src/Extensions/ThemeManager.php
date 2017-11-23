@@ -2,7 +2,7 @@
 
 namespace Easel\Extensions;
 
-use Easel\Meta\Constants;
+use App\Meta\Constants;
 use Easel\Models\Settings;
 use Illuminate\Support\Collection;
 
