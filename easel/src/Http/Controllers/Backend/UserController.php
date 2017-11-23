@@ -65,7 +65,7 @@ class UserController extends Controller
     {
         $data = User::findOrFail($id);
 
-        return view('easel::backend.user.edit', compact('data'));
+        return view('canvas::backend.user.edit', compact('data'));
     }
 
     /**

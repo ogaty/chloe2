@@ -1,6 +1,6 @@
 <?php
 
-namespace Easel\Meta;
+namespace App\Meta;
 
 /**
  * A home for global Canvas constants.
