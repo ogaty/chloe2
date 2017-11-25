@@ -19,7 +19,6 @@
 @section('unique-js')
     @include('canvas::backend.post.partials.editor')
     @include('canvas::backend.shared.components.datetime-picker')
-    {!! JsValidator::formRequest('Canvas\Http\Requests\PostUpdateRequest', '#postUpdate'); !!}
     @if(Session::get('_update-post'))
         @include('canvas::backend.shared.notifications.notify', ['section' => '_update-post'])
         {{ \Session::forget('_update-post') }}
