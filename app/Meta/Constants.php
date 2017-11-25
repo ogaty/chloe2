@@ -55,7 +55,7 @@ class Constants
     /**
      * @constant(ROUTE_MIDDLEWARE_GENERAL)
      */
-    const ROUTE_MIDDLEWARE_GENERAL = [];
+    const ROUTE_MIDDLEWARE_GENERAL = ['checkForMaintenanceMode'];
 
     /**
      * @constant(ROUTE_MIDDLEWARE_INSTALLED)

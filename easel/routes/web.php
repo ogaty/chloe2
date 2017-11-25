@@ -86,7 +86,7 @@ Route::group([
 
     /* Profile privacy page routes. */
     Route::get(RouteHelper::getAdminPrefix().'/profile/privacy', 'ProfileController@editPrivacy')->name('canvas.admin.profile.privacy');
-    Route::resource('admin/profile', 'ProfileController', [
+    Route::resource(RouteHelper::getAdminPrefix(). '/profile', 'ProfileController', [
         'only' => ['index', 'update'],
         'names' => [
             'index' => 'canvas.admin.profile.index',

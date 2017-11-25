@@ -101,7 +101,7 @@ return [
     | Middleware to apply to every route.
     |
     */
-    //'route_middleware_general' => ['CheckForMaintenanceMode'],
+    'route_middleware_general' => ['checkForMaintenanceMode'],
 
     /*
     |--------------------------------------------------------------------------
