@@ -4,7 +4,7 @@ namespace Easel\Console\Commands;
 
 use Artisan;
 use Exception;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 
 class Index extends CanvasCommand
 {

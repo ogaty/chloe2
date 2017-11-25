@@ -2,7 +2,7 @@
 
 namespace Easel\Helpers;
 
-class RouteHelper extends CanvasHelper
+class RouteHelper extends \App\Helpers\CanvasHelper
 {
     /**
      * Get General Middleware.

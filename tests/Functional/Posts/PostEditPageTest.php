@@ -7,15 +7,16 @@ class PostEditPageTest extends TestCase
     /** @test */
     public function it_can_edit_posts()
     {
-//        $this->callRouteAsUser('admin.post.edit', 1)
-//            ->submitForm('Update', ['title' => 'Foo'])
-//            ->see('Success! Post has been updated')
-//            ->see('Foo')
-//            ->seePostInDatabase();
-//        $this->actingAs($this->user)
-//            ->visit('/admin/post/1/edit')
-//            ->type('NewTitle', 'title')
-//            ->press('action');
+        Auth::guard('canvas')->login($this->user);
+        $this->callRouteAsUser('canvas.admin.post.edit', 1)
+            ->submitForm('Update', ['title' => 'Foo'])
+            ->see('Success! Post has been updated')
+            ->see('Foo')
+            ->seePostInDatabase();
+        $this->actingAs($this->user)
+            ->visit('/adm/post/1/edit')
+            ->type('NewTitle', 'title')
+            ->press('action');
     }
 
     /** @test */

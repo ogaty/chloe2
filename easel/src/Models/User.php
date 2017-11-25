@@ -3,7 +3,7 @@
 namespace Easel\Models;
 
 use Laravel\Scout\Searchable;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;

@@ -3,7 +3,7 @@
 namespace Easel\Http\Requests;
 
 use Illuminate\Validation\Rule;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Foundation\Http\FormRequest;
 

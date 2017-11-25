@@ -3,7 +3,7 @@
 namespace Easel\Http\Controllers\Backend;
 
 use Easel\Models\User;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Illuminate\Support\Facades\DB;
 use Easel\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Session;

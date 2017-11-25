@@ -4,7 +4,7 @@ namespace Easel\Http\Requests;
 
 use Easel\Models\Post;
 use Illuminate\Validation\Rule;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Illuminate\Foundation\Http\FormRequest;
 
 class PostUpdateRequest extends FormRequest

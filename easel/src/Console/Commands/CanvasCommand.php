@@ -8,7 +8,7 @@ use Exception;
 use Easel\Models\User;
 use Easel\Models\Settings;
 use Illuminate\Console\Command;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 
 class CanvasCommand extends Command
 {

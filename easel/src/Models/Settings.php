@@ -3,7 +3,7 @@
 namespace Easel\Models;
 
 use Schema;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Illuminate\Database\Eloquent\Model;
 
 class Settings extends Model

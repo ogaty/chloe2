@@ -122,4 +122,6 @@ return [
     |
     */
     'route_middleware_admin' => ['checkForMaintenanceMode', 'auth:canvas'],
+
+    'admin_prefix' => 'adm',
 ];

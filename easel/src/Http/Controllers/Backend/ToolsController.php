@@ -10,7 +10,7 @@ use Easel\Models\User;
 use Easel\Models\PostTag;
 use Easel\Models\Settings;
 use Easel\Models\Migrations;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Easel\Models\PasswordResets;
 use Illuminate\Support\Facades\App;
 use Easel\Http\Controllers\Controller;

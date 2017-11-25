@@ -6,7 +6,7 @@ use Easel\Models\Tag;
 use Easel\Models\Post;
 use Easel\Models\User;
 use Easel\Models\Settings;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Illuminate\Support\Facades\App;
 use Easel\Http\Controllers\Controller;
 

@@ -2,7 +2,7 @@
 
 namespace Easel\Http\Requests;
 
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Illuminate\Foundation\Http\FormRequest;
 
 class TagCreateRequest extends FormRequest
