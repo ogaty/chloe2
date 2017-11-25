@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "laravel/framework": "5.3.*",
+        "laravel/framework": "5.4.*",
         "cnvs/easel": "3.3.*",
         "cnvs/paper-dark": "*",
         "doctrine/dbal": "2.5.*",
@@ -18,7 +18,7 @@
     },
     "require-dev": {
         "mockery/mockery": "0.9.*",
-        "phpunit/phpunit": "~5.0",
+        "phpunit/phpunit": "~5.7",
         "symfony/css-selector": "~3.0",
         "symfony/dom-crawler": "~3.0"
     },

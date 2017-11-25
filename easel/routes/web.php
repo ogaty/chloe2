@@ -110,7 +110,7 @@ Route::group([
     Route::get(RouteHelper::getAdminPrefix().'/help', 'HelpController@index')->name('canvas.admin.help');
 
     /* Admin-only accessible routes. */
-    Route::group(['middleware' => 'checkIfAdmin'], function () {
+//    Route::group(['middleware' => 'checkIfAdmin'], function () {
         Route::resource(RouteHelper::getAdminPrefix().'/user', 'UserController', [
             'except' => 'show',
             'names' => [
@@ -138,5 +138,5 @@ Route::group([
         /* Settings page routes. */
         Route::get(RouteHelper::getAdminPrefix().'/settings', 'SettingsController@index')->name('canvas.admin.settings');
         Route::post(RouteHelper::getAdminPrefix().'/settings', 'SettingsController@store')->name('canvas.admin.settings');
-    });
+//    });
 });

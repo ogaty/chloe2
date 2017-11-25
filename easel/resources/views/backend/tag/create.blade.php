@@ -40,7 +40,5 @@
 @stop
 
 @section('unique-js')
-    {!! JsValidator::formRequest('Canvas\Http\Requests\TagCreateRequest', '#tagUpdate'); !!}
-
     @include('canvas::backend.shared.notifications.protip')
 @stop
