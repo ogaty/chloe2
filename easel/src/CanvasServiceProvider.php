@@ -200,7 +200,7 @@ class CanvasServiceProvider extends ServiceProvider
         $loader->alias('CanvasSetup', SetupHelper::class);
 
         // Register middleware...
-        $router->middleware('checkIfAdmin', CheckIfAdmin::class);
+        //$router->middleware('checkIfAdmin', CheckIfAdmin::class);
     }
 
     /**

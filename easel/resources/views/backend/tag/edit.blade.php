@@ -56,7 +56,6 @@
 @stop
 
 @section('unique-js')
-    {!! JsValidator::formRequest('Canvas\Http\Requests\TagUpdateRequest', '#tagUpdate') !!}
     @if(Session::get('_update-tag'))
         @include('canvas::backend.shared.notifications.notify', ['section' => '_update-tag'])
         {{ \Session::forget('_update-tag') }}

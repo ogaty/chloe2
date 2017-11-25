@@ -55,7 +55,6 @@
 @section('unique-js')
     @include('canvas::backend.user.partials.editor')
 
-    {!! JsValidator::formRequest('Canvas\Http\Requests\UserUpdateRequest', '#userUpdate') !!}
     @include('canvas::backend.shared.components.profile-datetime-picker', ['format' => 'YYYY-MM-DD'])
 
     @if(Session::get('_updateUser'))

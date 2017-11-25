@@ -61,7 +61,6 @@
 @stop
 
 @section('unique-js')
-    {!! JsValidator::formRequest('Canvas\Http\Requests\PasswordUpdateRequest', '#passwordUpdate') !!}
     @include('canvas::backend.shared.components.show-password', ['inputs' => 'input[name="new_password"], input[name="new_password_confirmation"]'])
 
     @if(Session::get('_passwordUpdate'))
