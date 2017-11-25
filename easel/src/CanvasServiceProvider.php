@@ -5,7 +5,7 @@ namespace Easel;
 use Easel\Models\Settings;
 use Easel\Helpers\RouteHelper;
 use Easel\Helpers\SetupHelper;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Easel\Helpers\ConfigHelper;
 use Easel\Console\Commands\Index;
 use Easel\Console\Commands\Theme;

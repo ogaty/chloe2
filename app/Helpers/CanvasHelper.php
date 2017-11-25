@@ -1,6 +1,6 @@
 <?php
 
-namespace Easel\Helpers;
+namespace App\Helpers;
 
 use ErrorException;
 use Easel\Models\User;

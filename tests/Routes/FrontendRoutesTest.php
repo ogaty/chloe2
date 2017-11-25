@@ -30,14 +30,14 @@ class PublicRoutesTest extends TestCase
     /** @test */
     public function it_can_access_the_login_page()
     {
-        $response = $this->call('GET', '/admin');
+        $response = $this->call('GET', '/adm');
         $this->assertEquals(200, $response->status());
     }
 
     /** @test */
     public function it_can_access_the_forgot_password_page()
     {
-        $this->visit('admin')->click('Forgot password')->seePageIs('password/forgot');
+        $this->visit('adm')->click('Forgot password')->seePageIs('password/forgot');
     }
 
     /** @test */
