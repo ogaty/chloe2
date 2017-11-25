@@ -5,7 +5,7 @@ namespace Easel;
 use Easel\Models\Settings;
 use Easel\Helpers\RouteHelper;
 use Easel\Helpers\SetupHelper;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Easel\Helpers\ConfigHelper;
 use Easel\Console\Commands\Index;
 use Easel\Console\Commands\Theme;
@@ -27,7 +27,7 @@ use Easel\Http\Middleware\EnsureNotInstalled;
 use Easel\Console\Commands\Publish\Migrations;
 use Easel\Extensions\ExtensionsServiceProvider;
 use TeamTNT\Scout\TNTSearchScoutServiceProvider;
-//use Easel\Http\Middleware\CheckForMaintenanceMode;
+use Easel\Http\Middleware\CheckForMaintenanceMode;
 use Larapack\ConfigWriter\Repository as ConfigWriter;
 use Proengsoft\JsValidation\Facades\JsValidatorFacade;
 use Proengsoft\JsValidation\JsValidationServiceProvider;
@@ -201,8 +201,7 @@ class CanvasServiceProvider extends ServiceProvider
 
         // Register middleware...
         $router->middleware('checkIfAdmin', CheckIfAdmin::class);
-        $router->middleware('canvasNotInstalled', EnsureNotInstalled::class);
-//        $router->middleware('CheckForMaintenanceMode', CheckForMaintenanceMode::class);
+        $router->middleware('checkForMaintenanceMode', CheckForMaintenanceMode::class);
     }
 
     /**

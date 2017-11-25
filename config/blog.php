@@ -121,5 +121,7 @@ return [
     | Middleware to apply to admin routes.
     |
     */
-    'route_middleware_admin' => ['auth:canvas'],
+    'route_middleware_admin' => ['checkForMaintenanceMode', 'auth:canvas'],
+
+    'admin_prefix' => 'adm',
 ];

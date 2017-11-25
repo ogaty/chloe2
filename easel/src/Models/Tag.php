@@ -3,7 +3,7 @@
 namespace Easel\Models;
 
 use Laravel\Scout\Searchable;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Illuminate\Database\Eloquent\Model;
 
 class Tag extends Model

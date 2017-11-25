@@ -4,7 +4,7 @@ namespace Easel\Helpers;
 
 use ConfigWriter;
 
-class ConfigHelper extends CanvasHelper
+class ConfigHelper extends \App\Helpers\CanvasHelper
 {
     // Config
     const FILENAME = 'blog.php';

@@ -3,7 +3,7 @@
 namespace Easel\Http\Controllers\Auth;
 
 use Easel\Models\User;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Easel\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;

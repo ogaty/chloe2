@@ -4,7 +4,7 @@ namespace Easel\Models;
 
 use Carbon\Carbon;
 use Laravel\Scout\Searchable;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Easel\Services\Parsedowner;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

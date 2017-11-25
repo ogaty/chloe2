@@ -3,7 +3,7 @@
 namespace Easel\Http\Controllers\Backend;
 
 use Easel\Models\User;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Illuminate\Support\Facades\DB;
 use Easel\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Session;
@@ -65,7 +65,7 @@ class UserController extends Controller
     {
         $data = User::findOrFail($id);
 
-        return view('easel::backend.user.edit', compact('data'));
+        return view('canvas::backend.user.edit', compact('data'));
     }
 
     /**

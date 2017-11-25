@@ -4,7 +4,7 @@ namespace Easel\Http\Controllers\Backend;
 
 use Session;
 use Easel\Models\Settings;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Easel\Extensions\ThemeManager;
 use Easel\Http\Controllers\Controller;
 use Easel\Http\Requests\SettingsUpdateRequest;

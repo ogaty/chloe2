@@ -6,7 +6,7 @@ use Schema;
 use Artisan;
 use Exception;
 use Easel\Helpers\SetupHelper;
-use Easel\Helpers\CanvasHelper;
+use App\Helpers\CanvasHelper;
 use Illuminate\Support\Facades\DB;
 
 class Uninstall extends CanvasCommand

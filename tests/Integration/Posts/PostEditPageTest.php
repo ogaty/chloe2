@@ -14,7 +14,7 @@ class PostEditPageTest extends TestCase
             ->see('Foo')
             ->seePostInDatabase();
         $this->actingAs($this->user)
-            ->visit('/admin/post/1/edit')
+            ->visit('/adm/post/1/edit')
             ->type('NewTitle', 'title')
             ->press('action');
     }
