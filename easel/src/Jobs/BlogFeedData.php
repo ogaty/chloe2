@@ -61,7 +61,7 @@ class BlogFeedData
             ->orderBy('published_at', $reverse_direction ? 'asc' : 'desc')
             ->simplePaginate(config('blog.posts_per_page'));
 
-        $posts->addQuery('tag', $tag->tag);
+//        $posts->addQuery('tag', $tag->tag);
 
         $page_image = $tag->page_image ?: config('blog.page_image');
 

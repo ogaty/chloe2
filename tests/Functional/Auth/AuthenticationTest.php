@@ -7,6 +7,7 @@ class AuthenticationTest extends TestCase
     /** @test */
     public function it_validates_the_login_form()
     {
-        $this->assertTrue(true);
+        $response = $this->get(route('canvas.admin'));
+        $response->assertStatus(200);
     }
 }
