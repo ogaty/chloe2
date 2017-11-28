@@ -6,7 +6,7 @@ use Exception;
 use Easel\Models\User;
 use Easel\Meta\Constants;
 use Easel\Helpers\SetupHelper;
-use Easel\Helpers\ConfigHelper;
+use App\Helpers\ConfigHelper;
 use Easel\Extensions\ThemeManager;
 use Illuminate\Support\Facades\Artisan;
 

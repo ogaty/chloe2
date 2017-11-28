@@ -2,7 +2,7 @@
 
 namespace Easel\Extensions;
 
-use Easel\Helpers\ConfigHelper;
+use App\Helpers\ConfigHelper;
 use Illuminate\Support\Collection;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Application;

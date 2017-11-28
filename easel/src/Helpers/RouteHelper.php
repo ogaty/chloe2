@@ -2,6 +2,8 @@
 
 namespace Easel\Helpers;
 
+use App\Helpers\ConfigHelper;
+
 class RouteHelper extends \App\Helpers\CanvasHelper
 {
     /**
