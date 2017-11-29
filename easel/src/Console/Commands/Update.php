@@ -3,7 +3,7 @@
 namespace Easel\Console\Commands;
 
 use Artisan;
-use Easel\Helpers\SetupHelper;
+use App\Helpers\SetupHelper;
 
 class Update extends CanvasCommand
 {

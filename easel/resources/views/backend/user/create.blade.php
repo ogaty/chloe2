@@ -40,6 +40,5 @@
 @stop
 
 @section('unique-js')
-    {!! JsValidator::formRequest('Canvas\Http\Requests\UserCreateRequest', '#createUser') !!}
     @include('canvas::backend.shared.components.show-password', ['inputs' => 'input[name="password"]'])
 @stop
