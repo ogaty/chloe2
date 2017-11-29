@@ -5,7 +5,7 @@ namespace Easel\Console\Commands;
 use Schema;
 use Artisan;
 use Exception;
-use Easel\Helpers\SetupHelper;
+use App\Helpers\SetupHelper;
 use App\Helpers\CanvasHelper;
 use Illuminate\Support\Facades\DB;
 

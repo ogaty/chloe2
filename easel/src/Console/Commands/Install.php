@@ -4,8 +4,8 @@ namespace Easel\Console\Commands;
 
 use Exception;
 use Easel\Models\User;
-use Easel\Meta\Constants;
-use Easel\Helpers\SetupHelper;
+use App\Meta\Constants;
+use App\Helpers\SetupHelper;
 use App\Helpers\ConfigHelper;
 use Easel\Extensions\ThemeManager;
 use Illuminate\Support\Facades\Artisan;
