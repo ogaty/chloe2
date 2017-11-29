@@ -4,7 +4,7 @@ namespace Easel;
 
 use Easel\Models\Settings;
 use Easel\Helpers\RouteHelper;
-use Easel\Helpers\SetupHelper;
+use App\Helpers\SetupHelper;
 use App\Helpers\CanvasHelper;
 use App\Helpers\ConfigHelper;
 use Easel\Console\Commands\Index;

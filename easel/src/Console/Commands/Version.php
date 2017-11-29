@@ -2,7 +2,7 @@
 
 namespace Easel\Console\Commands;
 
-use Easel\Helpers\SetupHelper;
+use App\Helpers\SetupHelper;
 
 class Version extends CanvasCommand
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Easel\Helpers;
+namespace App\Helpers;
 
 use Schema;
 use Easel\Models\Settings;
