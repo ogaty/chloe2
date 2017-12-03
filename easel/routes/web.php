@@ -1,6 +1,6 @@
 <?php
 
-use Easel\Helpers\RouteHelper;
+use \App\Helpers\RouteHelper;
 
 /* Frontend page routes. */
 Route::group([
