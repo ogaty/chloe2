@@ -1,6 +1,6 @@
 <?php
 
-use Easel\Helpers\RouteHelper;
+use \App\Helpers\RouteHelper;
 
 /* Frontend page routes. */
 Route::group([
@@ -11,16 +11,6 @@ Route::group([
 
     /* Installation page route. */
     Route::get('canvas.install', 'Easel\Http\Controllers\Setup\InstallController@index')->name('canvas.install');
-
-    /* Fully-installed and configured routes. */
-        Route::get('/', 'Easel\Http\Controllers\Frontend\BlogController@index')->name('canvas.home');
-        Route::get('/feed', 'Easel\Http\Controllers\Frontend\BlogController@feed')->name('canvas.feed');
-        Route::get('/sitemap.xml', 'Easel\Http\Controllers\Frontend\BlogController@sitemap')->name('canvas.sitemap');
-
-        Route::group(['prefix' => RouteHelper::getBlogPrefix()], function () {
-            Route::get('/', 'Easel\Http\Controllers\Frontend\BlogController@index')->name('canvas.blog.post.index');
-            Route::get('post/{slug}', 'Easel\Http\Controllers\Frontend\BlogController@showPost')->name('canvas.blog.post.show');
-        });
 
         /* Authentication routes. */
         Route::group([

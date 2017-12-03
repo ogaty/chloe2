@@ -3,7 +3,7 @@
 namespace Easel;
 
 use Easel\Models\Settings;
-use Easel\Helpers\RouteHelper;
+use App\Helpers\RouteHelper;
 use App\Helpers\SetupHelper;
 use App\Helpers\CanvasHelper;
 use App\Helpers\ConfigHelper;
